@@ -5,7 +5,7 @@ A custom Kubernetes controller that watches your own Custom Resource
 Definitions (CRDs) — such as `AppEnvironment` — and continuously 
 reconciles cluster state to match your declared intent. 
 
-I will also be self hosting this project, relying on my own personal computer and utilising systems like proxmox to make this possible.
+I will also be self hosting this project, relying on my own personal hardware and utilising systems like proxmox to make this possible.
 
 This is how the Automated Cluster Management Engine queuing system will work:
 
@@ -38,7 +38,7 @@ ConfigMaps, and HPAs based on a single `AppEnvironment` spec.
 
 How will the Kubernetes API server Store CRD changes ?
 
-When creating cutome resources such as _App Enviroment_, the API server will push it through a well defined pipeline the etcd:
+When creating cutome resources such as 'App Enviroment', the API server will push it through a well defined pipeline the etcd:
 
 The first step will be the Admission chain:
 
@@ -46,6 +46,5 @@ The first step will be the Admission chain:
 
 - Secondly validating webhooks this can only approve or reject. THis is where I will enforce buisness rules like "env must be apart of the staging/production process.
 
-These will be defined as MutatingWebhookConfiguration and ValidatingWebhookConfiguration resources.
+These will be defined as 'MutatingWebhookConfiguration' and 'ValidatingWebhookConfiguration' resources.
   
-
