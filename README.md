@@ -46,5 +46,5 @@ The first step will be the Admission chain:
 
 - Secondly validating webhooks this can only approve or reject. THis is where I will enforce buisness rules like "env must be apart of the staging/production process.
 
-These will be defined as 'MutatingWebhookConfiguration' and 'ValidatingWebhookConfiguration' resources.
+These will be defined as `MutatingWebhookConfiguration` and `ValidatingWebhookConfiguration` resources.
   
