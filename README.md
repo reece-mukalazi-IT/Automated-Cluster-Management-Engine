@@ -1,3 +1,5 @@
+<img width="574" height="97" alt="image" src="https://github.com/user-attachments/assets/3b42e332-5819-43ae-a1f6-71143ee449e4" />
+
 # Automated Cluster Management Engine
 
 A custom Kubernetes controller that watches your own Custom Resource 
@@ -12,9 +14,6 @@ you want via custom resources. The controller's reconciliation loop
 detects drift between desired and actual state and corrects it 
 automatically — including provisioning Deployments, Services, 
 ConfigMaps, and HPAs based on a single `AppEnvironment` spec.
-
-Built on [controller-runtime](https://github.com/kubernetes-sigs/controller-runtime),
-the same foundation used by production-grade Kubernetes operators.
 
 ## Key concepts
 
